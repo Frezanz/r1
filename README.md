@@ -1,56 +1,58 @@
-# r1 — A Relational Framework for Reality
+# r1 — A Relational Framework for Reality and Intelligence
 
-**Status:** Foundational research; hypotheses are provisional.
+**Status:** Foundational research. All proposed primitives and architectures are provisional.
 
-`r1` is a long-term attempt to formalize a framework for investigating relationships across physical, abstract, imagined, logical, psychological, and ethical domains.
+`r1` investigates whether a precise relational framework can become the basis of an intelligent system that is architecturally different from a conventional language model.
 
-The motivating hypothesis is that **connections, relations, and measurement may be different forms of a common relational structure**. The project investigates whether concepts such as existence, distinction, change, perspective, meaning, truth, stability, and value can be defined within a coherent formal system.
+The ambition is not merely to describe reality with shared vocabulary. It is to discover representations and operations from which useful understanding, inference, learning, prediction, and action can be built.
 
-This repository is a research notebook with version control—not a claim that a universal theory has already been established.
+## Research objective
 
-## Research commitments
+Develop and test a computational framework in which language is an interface to structured representations of distinctions, entities, properties, relations, measurements, states, and change. The framework may use neural networks or language models where useful; replacing them is not a requirement. The goal is to test whether a different core representation and learning process produces measurable advantages.
 
-1. Preserve the origin and intended meaning of the founder's ideas.
-2. Distinguish original hypotheses, established results, definitions, deductions, and open questions.
-3. Define terms before relying on them in arguments or equations.
-4. Do not equate a shared word with a shared mechanism across domains.
-5. Record counterexamples, limitations, and competing explanations.
-6. Prefer models that make distinctions, implications, or predictions explicit.
-7. Revise or reject claims when reasoning or evidence requires it.
+## Non-negotiable research rules
+
+1. Preserve the intent of the original ideas while making each claim precise.
+2. Label statements as **founder hypothesis**, **working definition**, **established result**, **derivation**, **empirical result**, or **open question**.
+3. Separate a mathematical primitive from a claim about what is fundamental in reality.
+4. Define types, assumptions, operations, and validity conditions before relying on a formula.
+5. Do not treat a shared word across domains as proof of a shared mechanism.
+6. Seek counterexamples and compare against simpler explanations and existing methods.
+7. Keep negative results. Revise or reject ideas when evidence requires it.
+8. Measure computational claims against explicit baselines; conceptual elegance alone is not evidence of intelligence.
 
 ## Starting hypotheses
 
-- **H1 — Relational measurement:** Measurement is fundamentally relational; physical quantities are one important class of measurement, not necessarily the only class.
-- **H2 — Conceptual unity:** Connection, relation, and measurement may be related manifestations of a deeper structure, though they are not automatically interchangeable under existing definitions.
-- **H3 — Cross-domain structure:** Some relational patterns may apply across physical, abstract, imagined, cognitive, logical, and ethical domains, with domain-specific interpretations.
-- **H4 — Perspective:** Interpretation can depend on observer, context, information, and representation; perspective-dependence does not by itself make every interpretation equally valid.
-- **H5 — Truth and stability:** Stability under transformations may be a useful property of claims, but stability alone does not establish truth.
+- **H1 — Relational measurement:** Measurement can be analysed in terms of relations, criteria, procedures, and results, but these parts may not collapse into one concept.
+- **H2 — Conceptual structure:** Distinction, relation, state, change, perspective, and measurement may form a useful dependency structure.
+- **H3 — Cross-domain structure:** Some formal patterns may transfer across domains while retaining domain-specific semantics.
+- **H4 — Alternative intelligence architecture:** An explicit relational world model may improve some kinds of compositional reasoning, grounding, or knowledge revision compared with a language-model-only baseline.
 
-These hypotheses are open to refinement, restriction, or rejection.
+These are hypotheses, not established findings.
+
+## Research path
+
+1. **Representation:** Identify the minimum information a computational unit must preserve.
+2. **Structure:** Define entities, distinctions, properties, relations, and identity without circular definitions.
+3. **Dynamics:** Represent state transitions, time, causes, and changes.
+4. **Semantics:** Connect symbols and language to grounded or otherwise interpretable representations.
+5. **Inference and learning:** Define how the system derives, updates, and tests beliefs.
+6. **Evaluation:** Build small controlled experiments and compare against baselines.
+7. **Scaling:** Only after small tests succeed, explore larger systems and multimodal data.
 
 ## Repository map
 
-- [`foundations/`](foundations/README.md) — candidate primitives and dependency questions
-- [`concepts/`](concepts/README.md) — working definitions of relation, measurement, perspective, and truth
+- [`foundations/`](foundations/README.md) — candidate primitives and dependencies
+- [`concepts/`](concepts/README.md) — working definitions of key concepts
+- [`architecture/`](architecture/README.md) — proposed computational design
 - [`domains/`](domains/README.md) — cross-domain interpretations and limits
 - [`method/`](method/research-protocol.md) — formalization and validation protocol
 - [`research/open-questions.md`](research/open-questions.md) — unresolved questions and counterexamples
-- [`CHANGELOG.md`](CHANGELOG.md) — major conceptual revisions
-
-## How to read a claim here
-
-Labels are used throughout:
-
-- **Founder hypothesis:** an idea originating in the project's initial discussions.
-- **Working definition:** a provisional definition adopted for analysis.
-- **Established result:** a claim supported by an identified field or source; citations should be added when relevant.
-- **Derivation:** a conclusion that follows from stated premises under specified rules.
-- **Open question:** unresolved or under-specified.
+- [`experiments/`](experiments/001-representation-unit.md) — initial computational research plan
+- [`CHANGELOG.md`](CHANGELOG.md) — major revisions
 
 ## First milestone
 
-Formalize *entity, distinction, relation, and measurement* sufficiently to test whether measurement can be represented as a special kind of relation. Do not assume in advance that these are irreducible primitives or that the framework can be complete.
+Investigate whether a **distinction under a criterion** can serve as a useful primitive for constructing representations, and whether entities can instead be treated as stable patterns of distinctions and relations. Compare this against starting with explicit entity/object records.
 
-## Long-term objective
-
-Investigate whether a precise, coherent, and appropriately consistent framework can connect concepts across domains. Completeness and consistency must be defined relative to an explicit formal language, axioms, semantics, and inference rules; they cannot be established by aspiration alone.
+Do not assume either candidate is fundamental. The first goal is a precise, testable comparison—not a complete theory of reality.
