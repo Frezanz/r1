@@ -1,78 +1,58 @@
 # r1 — A Relational Framework for Reality and Intelligence
 
-**Status:** Foundational research. Definitions, primitives, and architectures remain provisional.
+**Status:** Foundational research. All proposed primitives and architectures are provisional.
 
-`r1` investigates how to build a formal framework for representing reality and developing intelligence independently of large language models. An LLM is not assumed to be the cognitive core, the source of meaning, or the authority that decides what is true. Neural networks, machine learning, and conventional computation are also not ruled in or out in advance; each must earn its place through argument and evidence.
+`r1` investigates whether a precise relational framework can become the basis of an intelligent system that is architecturally different from a conventional language model.
 
-The project aims to discover explicit representations and operations for understanding, inference, learning, revision, prediction, and action. It must not confuse a useful description of reality with a demonstrated mechanism of intelligence.
+The ambition is not merely to describe reality with shared vocabulary. It is to discover representations and operations from which useful understanding, inference, learning, prediction, and action can be built.
 
-## First research target: truth
+## Research objective
 
-The first task is to investigate **what truth is and how truth can be assessed**. We must not assume that truth is identical to evidence, confidence, consistency, stability, usefulness, or consensus.
+Develop and test a computational framework in which language is an interface to structured representations of distinctions, entities, properties, relations, measurements, states, and change. The framework may use neural networks or language models where useful; replacing them is not a requirement. The goal is to test whether a different core representation and learning process produces measurable advantages.
 
-The investigation must distinguish at least:
-- the truth of a proposition or claim;
-- the evidence available for or against it;
-- the system's current confidence and the reasons for that confidence;
-- the conditions, scope, perspective, and time to which the claim applies;
-- the practical value, meaning, and relevance of storing or using it.
+## Non-negotiable research rules
 
-These may be related, but they are not interchangeable. A true claim may be unverified; a well-supported claim may later be overturned; a stable claim may be false; and a useful claim is not thereby true.
+1. Preserve the intent of the original ideas while making each claim precise.
+2. Label statements as **founder hypothesis**, **working definition**, **established result**, **derivation**, **empirical result**, or **open question**.
+3. Separate a mathematical primitive from a claim about what is fundamental in reality.
+4. Define types, assumptions, operations, and validity conditions before relying on a formula.
+5. Do not treat a shared word across domains as proof of a shared mechanism.
+6. Seek counterexamples and compare against simpler explanations and existing methods.
+7. Keep negative results. Revise or reject ideas when evidence requires it.
+8. Measure computational claims against explicit baselines; conceptual elegance alone is not evidence of intelligence.
 
-See [the truth investigation](research/truth-first-investigation.md) and [the framework filter](concepts/framework-filter.md).
+## Starting hypotheses
 
-## The framework filter
+- **H1 — Relational measurement:** Measurement can be analysed in terms of relations, criteria, procedures, and results, but these parts may not collapse into one concept.
+- **H2 — Conceptual structure:** Distinction, relation, state, change, perspective, and measurement may form a useful dependency structure.
+- **H3 — Cross-domain structure:** Some formal patterns may transfer across domains while retaining domain-specific semantics.
+- **H4 — Alternative intelligence architecture:** An explicit relational world model may improve some kinds of compositional reasoning, grounding, or knowledge revision compared with a language-model-only baseline.
 
-Every candidate item entering the framework should be inspectable rather than accepted as an undifferentiated piece of information. The filter records, where applicable:
+These are hypotheses, not established findings.
 
-1. **Content and type:** What exactly is being added—observation, claim, definition, inference, hypothesis, question, or value judgment?
-2. **Truth status:** What is asserted, supported, contradicted, conditional, or unresolved?
-3. **Evidence and provenance:** What supports it, where did the information come from, and can the support be checked?
-4. **Time:** When was it valid, observed, recorded, or revised? Is it time-sensitive or about change?
-5. **Meaning and scope:** What does it mean, under which interpretation, assumptions, domain, and conditions?
-6. **Value and mattering:** What difference would it make, to which goal or entity, and with what consequences?
-7. **Relations and dependencies:** What does it depend on, contradict, support, explain, or change?
-8. **Revision:** What observation or argument would require its status to change?
+## Research path
 
-This is a **multi-dimensional record, not one universal truth score**. Truth assessment, uncertainty, value, urgency, and relevance must remain distinct until a justified rule connects them. Ordering should depend on the task and explicit priorities, not silently treat the most recent, useful, confident, or repeated item as the truest.
-
-## Research discipline
-
-1. Preserve the founder's intended meaning separately from later interpretations.
-2. Mark each statement as a raw idea, working definition, hypothesis, formal result, empirical result, or open question.
-3. Separate claims about reality from claims about formal systems and claims about computational performance.
-4. State assumptions, scope, time conditions, and evaluation procedures.
-5. Seek counterexamples and competing explanations; preserve negative results.
-6. Do not treat shared vocabulary as proof of a shared mechanism.
-7. Do not promote a hypothesis to an established result merely because it fits the framework.
-8. Keep a traceable history of revisions and the reasons for them.
-
-## Provisional research path
-
-1. **Truth:** Investigate truth, truth conditions, and the limits of truth assessment.
-2. **Assessment:** Define how evidence, uncertainty, contradiction, and revision are represented without confusing them with truth itself.
-3. **Filtering:** Specify how truth status, time, meaning, value, mattering, and provenance govern storage, relations, retrieval, and ordering.
-4. **Foundations:** Compare candidate primitives—including distinction, entity, relation, state, change, process, and measurement—without presuming one is ultimate.
-5. **Dynamics and identity:** Investigate state, change, time, persistence, and spatiotemporal identity.
-6. **Formalization:** Define types, operations, dependencies, and inference rules precisely.
-7. **Experiments:** Test narrow claims with counterexamples and explicit baselines.
-8. **Intelligence:** Only then assemble and evaluate mechanisms for learning, reasoning, prediction, decision, and action.
-
-This order is a research strategy, not a claim that truth is ontologically prior to every other concept.
+1. **Representation:** Identify the minimum information a computational unit must preserve.
+2. **Structure:** Define entities, distinctions, properties, relations, and identity without circular definitions.
+3. **Dynamics:** Represent state transitions, time, causes, and changes.
+4. **Semantics:** Connect symbols and language to grounded or otherwise interpretable representations.
+5. **Inference and learning:** Define how the system derives, updates, and tests beliefs.
+6. **Evaluation:** Build small controlled experiments and compare against baselines.
+7. **Scaling:** Only after small tests succeed, explore larger systems and multimodal data.
 
 ## Repository map
 
-- [`concepts/`](concepts/README.md) — provisional concept specifications and framework-filter dimensions
 - [`foundations/`](foundations/README.md) — candidate primitives and dependencies
-- [`research/truth-first-investigation.md`](research/truth-first-investigation.md) — first investigation and its open questions
-- [`research/open-questions.md`](research/open-questions.md) — unresolved research questions
-- [`architecture/`](architecture/README.md) — candidate computational designs, not fixed assumptions
+- [`concepts/`](concepts/README.md) — working definitions of key concepts
+- [`architecture/`](architecture/README.md) — proposed computational design
 - [`domains/`](domains/README.md) — cross-domain interpretations and limits
-- [`method/research-protocol.md`](method/research-protocol.md) — formalization and validation procedure
-- [`experiments/`](experiments/001-representation-unit.md) — initial, limited representation experiment
-- [`prototype/`](prototype/README.md) — a narrow executable probe, not the framework itself
-- [`CHANGELOG.md`](CHANGELOG.md) — major changes and research decisions
+- [`method/`](method/research-protocol.md) — formalization and validation protocol
+- [`research/open-questions.md`](research/open-questions.md) — unresolved questions and counterexamples
+- [`experiments/`](experiments/001-representation-unit.md) — initial computational research plan
+- [`CHANGELOG.md`](CHANGELOG.md) — major revisions
 
-## Current milestone
+## First milestone
 
-Produce a defensible account of **what we mean by truth, what can and cannot be measured about it, and how the framework should represent the difference**. Do not begin by assigning arbitrary numeric truth scores or treating any candidate primitive as settled.
+Investigate whether a **distinction under a criterion** can serve as a useful primitive for constructing representations, and whether entities can instead be treated as stable patterns of distinctions and relations. Compare this against starting with explicit entity/object records.
+
+Do not assume either candidate is fundamental. The first goal is a precise, testable comparison—not a complete theory of reality.
