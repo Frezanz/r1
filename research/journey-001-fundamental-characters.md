@@ -30,15 +30,30 @@ Typing or pasting alphabets, numbers, symbols, and patterns is one way to supply
 
 A construction may be represented internally through typed units, properties, relations, configurations, or other suitable structures, then rendered as text, notation, diagrams, or another output. For example, a chemical structure should not be reduced to the written string of its formula; its elements, bonds, arrangement, and constraints are separate representational aspects.
 
-## Responsibilities to investigate
+## First-layer mind map
 
-1. **Represent fields:** physical constituents (particles, electrons, atoms, elements), chemistry, mechanics, mathematics, patterns, abstractions, and symbolic characters such as letters, digits, and operators.
-2. **Use governing rules:** apply each field’s real-world laws and relationships when constructing or transforming its constituents.
-3. **Explore rule changes:** allow rules to be altered, collapsed, removed, or replaced to generate and explore different constructions.
-4. **Construct and extend:** combine, transform, or propose new constituents and structures across fields.
-5. **Connect to evidence:** use the shared Framework’s reasoning hypotheses and mechanisms with real observations and estimates to inform generated outputs; keep source, observation, estimate, and invention distinguishable.
-
-These responsibilities are candidates to refine through concrete examples and tests.
+```mermaid
+mindmap
+  root((Fundamental Layer))
+    Constituents
+      Physical: particles, electrons, atoms, elements
+      Chemical and mechanical components
+      Mathematical objects and patterns
+      Abstract concepts
+      Symbols: letters, numbers, operators
+    Construction
+      Combine and transform
+      Properties, states, configurations
+      Propose new constituents
+    Rules
+      Apply each field’s real-world rules
+      Change, collapse, remove, or replace rules
+    Framework connection
+      Reasoning hypotheses and mechanisms
+      Real observations and estimates
+      Generate outputs
+      Distinguish observed, estimated, inferred, invented
+```
 
 ## Important distinctions
 
