@@ -32,16 +32,13 @@ A construction may be represented internally through typed units, properties, re
 
 ## Responsibilities to investigate
 
-1. **Distinguishability and identity:** establish which units or distinctions are being represented and how they remain identifiable.
-2. **Properties and states:** represent relevant attributes and allowed or observed states without confusing a unit with its current properties.
-3. **Composition and configuration:** make units available for combination into more complex structures.
-4. **Domain constraints:** allow constructions to carry applicable constraints, such as chemical compatibility, mathematical consistency, or declared fictional rules.
-5. **Representational flexibility:** support multiple encodings of a construction, including symbols and human-readable forms, without treating an encoding as the construction itself.
-6. **Extensibility:** allow candidate new primitives or representational distinctions to be proposed when existing ones are insufficient.
-7. **Inspection and comparison:** make constructions available for later formulae, reasoning, context, evaluation, and Framework relations.
-8. **Traceability:** distinguish observed or sourced structures from inferred, hypothesized, invented, or merely proposed structures.
+1. **Represent fields:** physical constituents (particles, electrons, atoms, elements), chemistry, mechanics, mathematics, patterns, abstractions, and symbolic characters such as letters, digits, and operators.
+2. **Use governing rules:** apply each field’s real-world laws and relationships when constructing or transforming its constituents.
+3. **Explore rule changes:** allow rules to be altered, collapsed, removed, or replaced to generate and explore different constructions.
+4. **Construct and extend:** combine, transform, or propose new constituents and structures across fields.
+5. **Connect to evidence:** use the shared Framework’s reasoning hypotheses and mechanisms with real observations and estimates to inform generated outputs; keep source, observation, estimate, and invention distinguishable.
 
-These are candidate responsibilities. Do not assume every operation belongs inside this layer; establish boundaries through concrete examples and tests.
+These responsibilities are candidates to refine through concrete examples and tests.
 
 ## Important distinctions
 
