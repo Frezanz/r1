@@ -1,65 +1,90 @@
-# Journey 001 — Fundamental Characters: Purpose and Open Questions
+# Journey 001 — Fundamental Building Blocks: Purpose and Open Questions
 
-**Status:** Purpose defined; implementation and experiments are in progress.
+**Status:** Core purpose refined; implementation and experiments remain in progress.
+**Change note:** This document broadens the original character/token framing without deleting that work. Character and token handling remain one application of the layer.
 
 ## Purpose
 
-Fundamental Characters provide identifiable units from which the system can construct, tag, connect, and later interpret more complex structures.
+Fundamental Building Blocks establish and expand the units, distinctions, properties, states, and configurations from which the system can represent, construct, inspect, and creatively explore things across domains—including constructions not explicitly predefined.
 
-The initial implementation uses Python's existing language environment as its working foundation. It should reuse Python's established character handling, tokenizer, parser, compiler, and runtime, while adding our own metadata and optional capabilities around them.
+The purpose is not merely to collect symbols or identify characters. It is to provide a foundation for construction. Human-readable symbols, alphabets, numbers, and notation are ways to supply or express defined components, not the boundary of the layer.
 
-The aim is not merely to collect symbols. It is to make the units used by the environment discoverable and enrichable with structured information that can support later formulae, reasoning, context, and the Framework.
+The foundation should accommodate physical and chemical structures, mathematical and quantitative objects, symbols and encodings, patterns, abstract concepts, and imaginary or hypothetical constructions. It should also permit new primitives or representational distinctions to be proposed when existing ones cannot adequately express a demonstrated need.
 
 ## Core distinctions
 
-1. **Character identity:** the exact character or encoded sequence being processed.
-2. **Token identity:** a unit recognized by Python's tokenizer, such as a name, number, operator, or delimiter.
-3. **Syntax role:** how a token participates in a parsed Python structure.
-4. **Metadata tags:** additional labels our system attaches to a character, token, or occurrence.
-5. **Context and relationships:** information that helps determine what a token is doing in a particular expression or program.
+1. **Unit identity:** what distinct unit or primitive is being represented.
+2. **Properties and states:** characteristics of a unit or its current condition.
+3. **Relations:** connections or interactions between represented items.
+4. **Configuration:** an arrangement of units and relations into a larger construction.
+5. **Representation/encoding:** a symbol, string, diagram, or data structure used to express a construction.
+6. **Context and constraints:** assumptions and rules that affect interpretation, compatibility, or validity.
+7. **Provenance/status:** whether a construction is observed, sourced, inferred, hypothesized, invented, or unverified.
 
-These are related but not interchangeable. For example, `*` is a character; in `a * b`, Python recognizes it as a multiplication operator. Our metadata system may attach a role and relationships to that occurrence.
+These are related but not interchangeable. For example, a chemical formula written as text is an encoding; a molecular structure includes atoms and bonds and may require geometry and constraints beyond that string.
+
+## Candidate scope
+
+- Physical structures and systems.
+- Chemical elements, bonds, compounds, and reactions.
+- Mathematical objects, quantities, dimensions, variables, and operations.
+- Symbols, characters, numbers, notation, signals, and encodings.
+- Patterns, sequences, symmetry, and configurations.
+- Abstract entities, distinctions, properties, and concepts.
+- Imaginary entities, hypothetical scenarios, and fictional rule systems.
+- Relations, processes, and transformations when required to define a construction.
+
+These are candidate domains, not separate required sub-layers. Their categories may overlap.
 
 ## Intended capabilities
 
-- Register and identify Python-relevant characters and token forms.
-- Automatically derive initial tags from Python's existing tokenizer and syntax structures.
-- Keep original source unchanged and preserve Python's normal execution path.
-- Store additional metadata separately so it can be queried or used when needed.
-- Allow metadata to accumulate across different contexts without forcing one universal meaning onto a symbol.
-- Preserve source positions and the context in which a tag was assigned.
-- Provide a foundation for constructing formulae and connecting units through the Framework.
-- Measure the added storage, processing time, and memory as the implementation develops.
+- Represent identifiable units and distinguish identity from properties.
+- Combine units into structured configurations.
+- Represent a construction independently of any single human-readable encoding where practical.
+- Preserve constraints relevant to a domain or explicitly declared fictional system.
+- Propose new primitives when a concrete construction cannot be adequately represented with existing ones.
+- Make constructions available to Formulae, Reasoning Formulae, Context, and the shared Framework.
+- Preserve provenance and distinguish generated candidates from validated knowledge.
+- Retain the existing Python character/token work as a practical human-readable and machine-readable application, preserving source and metadata separately.
+- Measure representational coverage, validity, novelty, resource cost, and failure modes.
 
 ## Design points to preserve
 
-- Reuse Python's established capabilities instead of recreating equivalent machinery.
-- A character's written identity is distinct from its contextual role.
-- A tag records a classification or interpretation; it should retain enough context to explain why it was assigned.
-- The same character may have different roles in different contexts.
-- Keep added capabilities optional where practical.
-- Preserve the original code and existing repository work.
-- Record findings from implementation before adding new structures or sub-layers.
+- Do not equate symbols with the things they represent.
+- Do not assume all domains share one universal primitive vocabulary before testing.
+- Do not confuse a possible fictional construction with physical possibility or real-world truth.
+- Do not treat a generated candidate as validated knowledge.
+- Keep domain constraints and evidence explicit.
+- Add sub-layers only when an observed need or experiment justifies them.
+- Preserve previous repository work and distinguish observations from hypotheses.
 
-## Open questions to investigate
+## Relationship to the wider architecture
 
-1. What exactly belongs in the initial registry: Unicode code points, Python token spellings, token types, or all of these as linked records?
-2. Should metadata attach to a character identity, a token type, a specific occurrence in source code, or several of these?
-3. Which tags can be assigned directly by Python's tools, and which require our own rules?
-4. How should the system represent one visible symbol made from multiple Unicode code points?
-5. How should a tag preserve the source location and context that justify it?
-6. How should repeated occurrences share common metadata while keeping occurrence-specific information?
-7. What is the smallest useful metadata format for later formula construction and Framework relations?
-8. How will we verify that original source is unchanged and existing Python behavior is preserved?
-9. What are the measured time, memory, and storage costs with tagging enabled and disabled?
-10. Which new structures or sub-layers become necessary only after an experiment reveals a concrete need?
+- **Formulae** organize and operate on available building blocks.
+- **Reasoning Formulae** derive, compare, test, and revise candidate constructions.
+- **Context** specifies applicable assumptions, constraints, interpretations, and state.
+- **Framework** provides shared relational structure; it is not another sequential stage.
+- **Output** renders constructions in human-readable or machine-usable forms.
+
+These boundaries remain provisional until concrete examples and experiments test them.
+
+## Open questions
+
+1. What is the minimal set of distinctions needed to represent units, properties, relations, configurations, and encodings?
+2. How should a primitive be defined relative to a representational system?
+3. When should the system propose a new primitive rather than compose existing ones?
+4. How can identity persist across different encodings or representations?
+5. How should domain-specific constraints be expressed without hard-coding every possible domain?
+6. How should physical validity, mathematical validity, fictional consistency, and speculation be distinguished?
+7. What evidence is required before a generated construction can be treated as reliable?
+8. Which responsibilities belong in this layer versus Formulae, Reasoning Formulae, Context, or Framework?
+9. What experiments would demonstrate novel construction rather than mere retrieval or recombination?
+10. How should coverage, novelty, validity, resource cost, and failure modes be measured?
 
 ## First practical milestone
 
-Given Python source code, the system should use Python's own tools to inspect it, generate an initial metadata record for recognized characters or tokens and their occurrences, and display the result without executing the inspected source.
-
-A successful milestone should be runnable on the target Termux environment, covered by tests, and accompanied by a small example showing the source, the detected structure, the generated tags, and the measured resource use where practical.
+Compare four contrasting constructions: a symbolic expression, a chemical structure, a mathematical object, and an imaginary entity. For each, record units, properties, relations/configuration, constraints, provenance/status, and a human-readable rendering. Identify shared representation needs and genuine domain differences before adding new sub-layers.
 
 ## Findings log
 
-Add dated observations here after running experiments. Separate observed behavior from hypotheses and unresolved questions. Do not mark an architectural claim as validated until an experiment supports it.
+Record dated observations from experiments. Separate observed behavior from hypotheses and unresolved questions. Do not mark a capability as validated until an experiment supports it.
